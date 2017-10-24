@@ -1,0 +1,31 @@
+body{
+	background-image: url('../Images/SweetGirl.jpg')
+}
+
+.div1{
+	background-image: url('../Images/Steins_Gate_Girl_talk.jpg');
+	background-repeat: no-repeat;
+	background-size: 630px 500px;
+	background-position:center;
+}
+
+.div2{
+	background-image: url('../Images/labyrinth.jpg');
+	background-size: 630px 500px;
+	background-position:center;
+	background-repeat: no-repeat;
+}
+
+.div3{
+	background-image: url('../Images/Zeppelin.jpg');
+	background-size: 630px 500px;
+	background-position:center;
+	background-repeat: no-repeat;
+}
+
+.div4{
+	background-image: url('../Images/owl.jpg');
+	background-size: 630px 500px;
+	background-position:center;
+	background-repeat: no-repeat;
+}

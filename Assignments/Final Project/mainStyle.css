@@ -1,0 +1,35 @@
+body{
+	background-image: url("Images/background.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	background-size: cover;
+	
+}
+h1{
+	color: blue;
+	text-align:center;
+}
+img{
+	position: absolute;
+	left: 0;
+	height:350px;
+
+}
+p{
+	color: darkgreen;
+	position: relative;
+	margin-right: 550px;
+	margin-left: 260px;
+	font-size: 150%;
+}
+div{
+	display: none;
+}
+a:hover + div{
+	display: block;
+}
+nav {
+	font-size: 150%;
+  text-align: center;
+}

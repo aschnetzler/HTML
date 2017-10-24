@@ -1,0 +1,27 @@
+body{
+background-color: rgb(59, 11, 48);
+}
+nav{
+	text-align:center;
+	font-size: 150%;
+}
+table{
+	margin: auto;
+	border:  solid black 2pt;
+	background-color: white;
+}
+ul{
+	list-style-type: none;
+	}
+a:link {
+    color: white;
+}
+a:visited {
+    color: rgb(126,192,238);
+}
+a:hover {
+    color: yellow;
+}
+h1{
+	color:white;
+}

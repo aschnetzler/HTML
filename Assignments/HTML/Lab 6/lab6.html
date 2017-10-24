@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>
+		Lab 6
+		</title> <!-- name of tab -->
+	</head>
+<!-- code above is important and needed in every code -->
+	<body>
+	
+	<h2> Customer Information: </h2>
+	
+	<table>
+	
+	<tr>
+	<td> <p> Name: </p> </td>
+	<td><input type= "text" name= "FirstName"/> </td>
+	</tr>
+	
+	<tr>
+	<td> Email: </td>
+	<td> <input type= "email" name= "email"/> </td>
+	</tr>
+	
+	<tr>
+	<td> Phone: </td>
+	<td> <input type= "tel" name= "usrtel"/></td>
+	</tr>
+	
+	<tr>
+	<td> Address: </td>
+	<td><input type= "text"/></td>
+	</tr>
+	
+	<tr>
+	<td> City: </td>
+	<td><input type= "text"/></td>
+	</tr>
+	
+	<tr>
+	<td> Zip: </td>
+	<td> <input type= "text"/></td>
+	</tr>
+	</table>
+	
+	<h2> Flight or Car: </h2>
+	<input type= "radio"  onclick="showText(this)" value="Show"/> Flight
+	<input type= "radio" name= "level" value= "C"/> Car
+	
+	<h2> Payment: </h2>
+	<table>
+	
+	<tr>
+	<td> City or Airport (Pick Up):</td> 
+	<td> <input type= "text"/> </p> </td>
+	</tr>
+	
+	<tr>
+	<td> Date and Time (Pick Up): </td>
+	<td> <input type= "datetime-local" name="datetimepickup"/> </p></td>
+	</tr>
+	
+	<tr>
+	<td> City or Airport (Drop Off):</td> 
+	<td> <input type= "text"/> </p></td>
+	</tr>
+	
+	<tr>
+	<td> Date and Time(Drop Off): </td>
+	<td> <input type= "datetime-local" name="datetimedropoff"/> </td>
+	</table>
+	
+	<table>
+	<tr>
+	<td> <p><input type="reset" name= "clear" value="Clear From"/></p></td>
+	<td><p><input type="submit" name="send" value="Submit"/><p></td>
+	</tr>
+	</table>
+	</body> <!-- Everything within the body is what will show -->
+</html><!-- End of code -->

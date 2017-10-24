@@ -1,0 +1,61 @@
+body{
+	background-color: #660000;	
+}
+h2{
+	text-align: center;
+}
+nav{
+	text-align:center;
+	font-size: 150%;
+}
+#freshmanFall{
+    float:left;
+	margin:0 5px;
+	background-color: white;
+	padding-right: 5px;
+	border-radius: 25px;
+}
+#freshmanSpring{
+	float:right;
+	margin:0 5px;
+	background-color: white;
+	padding-right: 5px;
+	border-radius: 25px;
+}
+#sophomoreFall{
+    float:left;
+	margin:0 5px;
+	background-color: white;
+	padding-right: 5px;
+	border-radius: 25px;
+}
+#sophomoreSpring{
+	float:right;
+	margin:0 5px;
+	background-color: white;
+	padding-right: 5px;
+	border-radius: 25px;
+}
+#juniorFall{
+	display: table;
+    margin: auto;
+	background-color: white;
+	padding-right: 5px;
+	border-radius: 25px;
+}
+hr{
+	border-color: black;
+}
+h1{
+	text-align: center;
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: yellow;
+}
+

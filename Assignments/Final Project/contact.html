@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>
+		Contact Page
+		</title> <!-- name of tab -->
+		<link rel="stylesheet" type="text/css" href="contactStyle.css">
+	</head>
+<!-- code above is important and needed in every code -->
+	<body>
+	<nav>
+		<a href="main.html">Home</a> 
+		<a href="courses.html">Courses</a> 
+		<a href="cv.html">Resume</a> 
+		<a href="interests.html">Interests</a>
+		<a href= "videoPlayer.html">HTML 5 Video Player Assignment</a>
+		<a href= "javascript.html">Javascript Assignment</a>
+		<a href= "contact.html">Contact</a>
+	</nav>
+	<h1><span style="font-family: broadway"> Contact Page</span></h1>
+	<form name="contact" action="contact.php" method="post">
+	<table>
+<tr>
+<td>Name:</td> 
+<td><input type="text" name= "fullname" pattern="([A-Za-z][A-Za-z]*)"/></td>
+</tr>
+<tr>
+<td> Email: </td>
+<td><input type="text" name= "email" pattern="([A-Za-z]*[0-9]*)[@][A-Za-z]*[\.]([edu|com|org|net]{3})"/></p></td>
+</tr>
+<tr>
+<td>Phone:</td> 
+<td><input type="text" name= "phone" pattern="(([0-9]{3})[\-]([0-9]{3})[\-]([0-9]{4}))"/></p></td></td></tr>
+<tr>
+<td>Address:</td> 
+<td><input type="text" name= "address"/></p></td>
+</tr>
+<tr>
+<td>City: </td>
+<td><input type="text" name= "city"/></p></td>
+</tr>
+<tr>
+<td>Zip: </td>
+<td><input type="text" name= "zip" pattern="(\d{5}([\-]\d{4})?)"/></p></td></tr>
+</table>
+<p> Professional or Personal:</p>
+<input type="radio" id="pro" name= "proOrPer" onclick="professional()" value= "pro"/> Professional
+<input type="radio"  id="per" name= "proOrPer" value= "per"/> Personal
+<div id="contactType"></div>
+<script>
+	function professional() {
+	var typeContact= document.forms['contact']['proOrPer'].value;
+	var code = "";
+
+	if (typeContact == 'pro') {
+		code = code + "<input type='radio' name='Job' value='internship' onclick='internshipStuff()' id='internship'> Internship";
+		code = code + "<input type='radio' name='Job' value='fullTime' onclick='fullTime()' id='fulltime'> Professional Full Time";
+		code= code + "<div id='internshipButton'></div>"
+	}
+	document.getElementById('contactType').innerHTML = code;
+}
+function internshipStuff() {
+	var code = "";
+	code= code + "<p> Enter the city for the internship:</p>";
+	code= code+"<input type='text' name= 'internCity'>";
+	code= code + "<p> Enter a starting wage:</p>";
+	code= code+"<input type='text' name= 'wage'>";
+	code= code + "<p> Select a start date:</p>";
+	code= code+"<input type='date' name= 'startDateIntern'>";
+	document.getElementById('internshipButton').innerHTML = code;
+}
+function fullTime() {
+	var code = "";
+	code= code + "<p> Enter the city for Professional Full Time job:</p>";
+	code= code+"<input type='text' name= 'jobCity'>";
+	code= code + "<p> Enter a starting salary:</p>";
+	code= code+"<input type='text' name= 'salary'>";
+	code= code + "<p> Select a start date:</p>";
+	code= code+"<input type='date' name= 'startDateJob'>";
+	document.getElementById('contactType').innerHTML = code;
+	}
+</script>
+<p> Is a rental car needed?:</p>
+<input type="radio" id="yes" name= "rental" onclick="rentalCar()" value= "yes"/> Yes
+<input type="radio"  id="no" name= "rental" value= "no"/> No
+<div id="rentalCar"></div>
+<script>
+function rentalCar() {
+	var typeRental = document.forms['contact']['rental'].value;
+	var code = "";
+
+	if (typeRental == 'yes') {
+		code = code + "<p>Enter the city for pick up location:</p>";
+		code= code+"<input type='text' name= 'pickUplocation'>";
+		code = code + "<p>Enter the date and time for pick up:</p>";
+		code= code+"<input type='datetime-local' name= 'pickUpTime'>";
+		code = code + "<p>Enter the city for drop off location:</p>";
+		code= code+"<input type='text' name= 'dropOffLocation'>";
+		code = code + "<p>Enter the date and time for drop off:</p>";
+		code= code+"<input type='datetime-local' name= 'dropOffTime'>";
+		}
+	document.getElementById('rentalCar').innerHTML = code;
+}
+</script>
+<p><input type= "submit" name= "submit" value= "Submit"/> <input type= "reset" name= "reset" value= "Reset"/></p> </p> 
+	<script>
+function resetform() {
+	document.forms['contact']['reset'].value = "";
+}
+</script>
+	</form>
+	</body> <!-- Everything within the body is what will show -->
+</html><!-- End of code -->
